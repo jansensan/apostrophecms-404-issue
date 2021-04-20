@@ -1,7 +1,9 @@
 {
-  "name": "apostrophe-boilerplate",
+  "name": "apostrophecms-404-issue",
+  "description": "Example of 404 issue with apostrophe-second-chance-login",
   "version": "2.0.0",
-  "description": "Minimal Apostrophe Boilerplate",
+  "license": "MIT",
+  "author": "Mat Janson Blanchet <mat.jb@jansensan.net>",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -9,14 +11,11 @@
     "docker-backup-content": "docker-compose exec apostrophe ./scripts/docker-backup-content",
     "docker-restore-content": "docker-compose exec apostrophe ./scripts/docker-restore-content"
   },
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  "author": "Apostrophe Technologies, Inc.",
-  "license": "MIT",
   "dependencies": {
-    "apostrophe": "^2.116.1"
+    "accept-language": "3.0.18",
+    "apostrophe": "2.117.1",
+    "apostrophe-second-chance-login": "2.0.0",
+    "apostrophe-workflow": "2.38.3"
   },
   "nodemonConfig": {
     "verbose": true,

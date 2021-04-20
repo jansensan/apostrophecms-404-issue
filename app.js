@@ -7,7 +7,7 @@ if (process.argv.find(arg => arg.match(/ProcessContainer/))) {
 }
 
 const apos = require('apostrophe')({
-  shortName: 'apostrophe-boilerplate',
+  shortName: 'apostrophecms-404-issue',
 
   // See lib/modules for basic project-level configuration of our modules
   // responsible for serving static assets, managing page templates and
@@ -30,6 +30,12 @@ const apos = require('apostrophe')({
     // we recommend enabling the alt field for clarity.
     'apostrophe-images': {
       enableAltField: true
+    },
+
+    'apostrophe-second-chance-login': {},
+
+    'apostrophe-workflow': {
+      defaultMode: 'live'
     },
   }
 });
